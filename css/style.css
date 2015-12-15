@@ -82,7 +82,7 @@ height:0;
     display:inline-block;
     padding:10px;
 }
-.photo
+.photo2
 {
   min-height: 248px;
   min-width: 248px;
@@ -92,6 +92,26 @@ height:0;
   margin-left: 25%;
   margin-right: 25%;
    }
+.photo
+{
+  text-align: center;
+  border: 1px solid #ccc;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.txt
+{
+  text-align: center;
+  border: 1px solid #ccc;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+#tableaux
+{
+  width: 50%;
+}
 #txt
 {
   min-height: 150px;
