@@ -93,7 +93,7 @@ height:0;
   width: 50%;
   margin-left: 25%;
   margin-right: 25%;
-  filter: blur(100);
+  background: rgba( 255, 255, 255, 0.5);
    }
 .photo
 {
@@ -103,23 +103,21 @@ height:0;
   margin-left: 25%;
   margin-right: 25%;
   position: sticky;
-  background-image: url(img/blanc.jpg);
   vertical-align: middle;
+  background: rgba( 255, 255, 255, 0.5);
 }
 .txt
 {
-  text-align: center;
   border: 1px solid #ccc;
-  width: 50%;
   margin-left: 25%;
   margin-right: 25%;
-  padding-left: 25%;
+  padding-left: 18%;
+  max-width: 50%;
+  background: rgba( 255, 255, 255, 0.5);
 }
 #tableaux
 {
-  width: 50%;
 }
-
 #moi
 {
 float: left;
@@ -128,6 +126,11 @@ margin: 5px;
 #photopain
 {
  width: 100%;
+}
+#txt
+{
+  min-width: 300px;
+  min-height: 150px;
 }
 #boul
 {
