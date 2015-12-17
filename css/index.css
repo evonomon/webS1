@@ -93,3 +93,51 @@ a:active, a:focus {
   padding-top: 50px;
   padding-left: 60px;
 }
+@keyframes AutoSlide {
+    0% {
+        left: 0px; /*1ère image*/
+    }
+    15% {
+        left: 0px; /*idem pour attente*/
+    }
+    35% {
+        left: -150px; /*2ème image*/
+    }
+    50% {
+        left: -150px; /*idem pour attente*/
+    }
+    70% {
+        left: -300px; /*3ème image*/
+    }
+    85% {
+        left: -300px; /*idem pour attente*/
+    }
+    100% {
+        left: 0px; /*1ère image*/
+    }
+}
+#slideshow {
+  padding-top: 300px;
+    vertical-align: top;
+    width: 500px;
+    height: 500px;
+    margin:  20px auto;
+    overflow: hidden;
+}
+#sContent li {
+    display: inline;
+}
+#sContent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2000px;
+    margin: 0;
+    padding: 0;
+
+    /*CSS3 keyframes animation*/
+    animation-name: AutoSlide;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
