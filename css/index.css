@@ -49,7 +49,7 @@ a:active, a:focus {
 }
 
 #banniere{
-  margin: 0px;
+  margin: 0;
   background-image: url('img/baniere.png');
   width: 100%;
   height: 180px;
@@ -57,11 +57,12 @@ a:active, a:focus {
   top:0px;
 }
 #banniere2{
-    margin: 0px;
+    margin: 0;
     background-image: url('img/baniere2.png');
     width: 100%;
     height: 100px;
-    bottom:0px;
+    position: fixed;
+    vertical-align: bottom;
 }
 
   .nav{
