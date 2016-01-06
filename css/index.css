@@ -91,5 +91,52 @@ a:active, a:focus {
   position: fixed;
   width: 25%;
   padding-top: 50px;
-  padding-left: 60px;
+  padding-left: 70%;
+}
+@keyframes AutoSlide {
+    0% {
+        left: 0px; /*1ère image*/
+    }
+    15% {
+        left: 0px; /*idem pour attente*/
+    }
+    35% {
+        left: -486px; /*2ème image*/
+    }
+    50% {
+        left: -486px; /*idem pour attente*/
+    }
+    70% {
+        left: -972px; /*3ème image*/
+    }
+    85% {
+        left: -972px; /*idem pour attente*/
+    }
+    100% {
+        left: 0px; /*1ère image*/
+    }
+}
+
+#sContent li {
+    display: inline;
+}
+#slideshow {
+    padding-top: 50px;
+    position: fixed;
+    width: 480px;
+    height: 600px;
+    overflow: hidden;
+    margin: 0px;
+}
+
+#sContent {
+    padding-left: 0px;
+    position: absolute;
+    width: 1460px;
+
+    /*CSS3 keyframes animation*/
+    animation-name: AutoSlide;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
